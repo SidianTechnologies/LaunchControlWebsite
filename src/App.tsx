@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     gsap.fromTo(fullPage.current,
       {
-        opacity: 0,
+        opacity: 1,
       },
       {
         opacity: 1,
@@ -35,12 +35,16 @@ function App() {
 
 
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center overflow-y-auto overflow-x-clip text-text" ref={fullPage}>
+    <div className="w-full h-full flex flex-col justify-center items-center overflow-y-auto overflow-x-clip text-text bg-background" ref={fullPage}>
+
       <Landing/>
       <div className="h-screen w-full text-center flex flex-col items-center" ref={aboutUsFirstText}>
         <div className="text-6xl text-text-light font-bold">Who Are We?</div>
         <div className="text-xl w-2/3 mt-space">{String("Launch control is a decent car club in Lafayette high school. ").repeat(10)}</div>
-        <button className="mt-space button-primary">Learn More</button>
+        <div className="flex space-x-space">
+          <button className="button-secondary mt-space">Learn More</button>
+          <button className="button-primary mt-space">Learn More</button>
+        </div>
       </div>
     </div>
   );

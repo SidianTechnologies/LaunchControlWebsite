@@ -10,12 +10,17 @@ export default {
   theme: {
     extend: {
       colors: {
+        background: {
+          DEFAULT: "#110a03",
+        },
         primary: {
-          DEFAULT: colors.orange[600],
+          light: colors.orange[200],
+          DEFAULT: "#ff8000",
+          dark: "#321a01",
         },
         text: {
-          light: colors.orange[200],
-          DEFAULT: colors.stone[400],
+          light: "#f3dbbe",
+          DEFAULT: "#9b8f80",
           datk: colors.stone[500],
         }
       },
@@ -32,7 +37,10 @@ export default {
           "@apply rounded-lg": {}
         },
         ".button-primary": {
-          "@apply px-4 py-2 border-2 border-text-light rounded bg-primary text-text-light": {}
+          "@apply px-4 py-2 border-2 border-primary-dark rounded bg-primary text-primary-dark font-bold": {}
+        },
+        ".button-secondary": {
+          "@apply px-4 py-2 border-2 border-text-light rounded bg-transparent text-text-light font-bold": {}
         },
       });
     },
