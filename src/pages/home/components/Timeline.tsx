@@ -1,5 +1,3 @@
-import { CircleFill } from "react-bootstrap-icons";
-
 export default function Timeline(){
   return(
     <div className="w-full pr-16 px-4 md:px-break mt-break">
