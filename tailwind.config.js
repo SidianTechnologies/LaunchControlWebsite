@@ -27,6 +27,15 @@ export default {
       spacing: {
         break: '80px',
         space: '16px',
+      },
+      keyframes: {
+        disappear: {
+          '0%': {translate: 0},
+          '100%': {translate: -2500},
+        },
+      },
+      animation: {
+        sliding: 'disappear 10s linear infinite',
       }
     },
   },

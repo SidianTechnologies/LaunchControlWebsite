@@ -1,5 +1,3 @@
-    import { useState } from "react"
-
     export default function NewsLetterEntry () {
 
         const imageCarousel = [
@@ -32,14 +30,19 @@
 
                 <div className="flex justify-between mt-space text-primary text-2xl font-bold">7/16/2023</div>
 
-                <div className="mt-space relative overflow-hidden rounded-lg h-[40vh] p-space flex justify-center items-center">
-                    <div id="slider" className="w-full h-full overflow-auto scroll-smooth flex space-x-8">
+                <div className="w-full mt-space overflow-hidden rounded-lg h-[40vh] p-space flex justify-center items-center">
+                    <div className="w-full h-full flex space-x-8 animate-sliding">
+                        {imageCarousel.map((item) => (
+                            <img className="rounded-[35px] border-2 border-primary/60 p-2" src={item.image}></img>
+                        ))}
+
                         {imageCarousel.map((item) => (
                             <img className="rounded-[35px] border-2 border-primary/60 p-2" src={item.image}></img>
                         ))}
                     </div>
+
                 </div>
-                <div className="md:w-full text-left flex flex-col text-primary text-2xl lg:w-2/3 mt-space">
+                <div className=" px-4 md:w-full text-left flex flex-col text-primary text-2xl lg:w-2/3 mt-space">
                     <div>Objective</div>
                     <div className="mt-space text-text text-xl">{String("Filler text ").repeat(20)}</div>
                 </div>
