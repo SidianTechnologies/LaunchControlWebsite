@@ -30,12 +30,13 @@ export default {
       },
       keyframes: {
         disappear: {
-          '0%': {translate: 0},
-          '100%': {translate: -2500},
+          '0%': {transform: `translate(0)`},
+          '100%': {transform: `translate(-100%)`},
         },
       },
       animation: {
         sliding: 'disappear 10s linear infinite',
+        delay: 'disappear 10s linear infinite 10s',
       }
     },
   },
