@@ -25,7 +25,7 @@
             }
         ]
         return (
-            <div className="flex flex-col items-center text-center w-full h-full mt-break">
+            <div className="flex flex-col items-center text-center w-full h-full my-break">
                 <div className="text-text-light text-6xl font-bold">
                     Newsletter
                 </div>
@@ -39,7 +39,7 @@
                         ))}
                     </div>
                 </div>
-                <div className="md:w-full text-left flex flex-col text-primary text-2xl lg:w-2/3 mt-space h-screen">
+                <div className="md:w-full text-left flex flex-col text-primary text-2xl lg:w-2/3 mt-space">
                     <div>Objective</div>
                     <div className="mt-space text-text text-xl">{String("Filler text ").repeat(20)}</div>
                 </div>
