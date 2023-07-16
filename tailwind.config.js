@@ -21,7 +21,7 @@ export default {
         text: {
           light: "#f3dbbe",
           DEFAULT: "#9b8f80",
-          datk: colors.stone[500],
+          dark: colors.stone[500],
         }
       },
       spacing: {
