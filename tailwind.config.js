@@ -14,14 +14,14 @@ export default {
           DEFAULT: "#110a03",
         },
         primary: {
-          light: colors.orange[200],
+          light: colors.orange[300],
           DEFAULT: "#ff8000",
           dark: "#321a01",
         },
         text: {
           light: "#f3dbbe",
           DEFAULT: "#9b8f80",
-          datk: colors.stone[500],
+          dark: colors.stone[700],
         }
       },
       spacing: {

@@ -19,13 +19,9 @@ export default function AboutUs(){
   }, [])
 
   return(
-    <div className="h-screen w-full text-center flex flex-col items-center" ref={aboutUsFirstText}>
+    <div className="h-fit w-full text-center flex flex-col items-center" ref={aboutUsFirstText}>
       <div className="text-6xl text-text-light font-bold">Who Are We?</div>
-      <div className="text-xl w-2/3 mt-space">{String("Launch control is a decent car club in Lafayette high school. ").repeat(10)}</div>
-      <div className="flex space-x-space">
-        <button className="button-secondary mt-space">Learn More</button>
-        <button className="button-primary mt-space">Learn More</button>
-      </div>
+      <div className="text-xl w-full md:w-2/3 px-4 mt-space">{String("Launch control is a decent car club in Lafayette high school. ").repeat(10)}</div>
     </div>
   )
 }
