@@ -4,9 +4,6 @@ export default function Sponsors(){
       <div className="text-6xl text-text-light font-bold mb-8">Sponsors</div>
       <div className="flex flex-wrap w-full justify-center">
         <Sponsor name="Sidian Technologies" logo="./SidianLogo.png"/>
-        <Sponsor name="Sidian Technologies" logo="./SidianLogo.png"/>
-        <Sponsor name="Sidian Technologies" logo="./SidianLogo.png"/>
-        <Sponsor name="Sidian Technologies" logo="./SidianLogo.png"/>
       </div>
     </div>
   )

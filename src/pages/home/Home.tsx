@@ -12,8 +12,8 @@ export default function Home(){
     <div className="w-full h-full flex flex-col justify-center items-center overflow-y-scroll overflow-x-clip text-text bg-background">
       <Landing />
       <AboutUs/>
-      <NewsLetterEntry/>
       <Timeline/>
+      <NewsLetterEntry/>
       <Sponsors/>
     </div>
   )
