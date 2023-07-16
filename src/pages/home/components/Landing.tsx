@@ -54,7 +54,7 @@ export default function Landing(){
           <div className="absolute z-10 w-1/2 h-1/3 bottom-0 bg-gradient-to-t from-0% from-background"/>
           <img className="w-full h-full object-cover -translate-x-[50vw] scale-x-[-1]" ref={landingBgImageRef} src={"https://images.squarespace-cdn.com/content/v1/5f7ca9b4bb17060b028086bb/1680124033120-76B8OVF7MUX5DCP221C8/639408.jpg?format=1000w"}/>
         </div>
-
+               
         <div className="absolute z-20 flex flex-col items-end w-full h-full">
           <div className="w-full sm:w-2/3 h-full flex flex-col justify-center items-center space-y-4 text-center">
             <div className="w-fit h-fit flex flex-col space-y-2 justify-center items-center">
