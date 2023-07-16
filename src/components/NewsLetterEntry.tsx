@@ -30,17 +30,19 @@
 
                 <div className="flex justify-between mt-space text-primary text-2xl font-bold">7/16/2023</div>
 
-                <div className="w-full overflow-hidden mt-space rounded-lg h-[40vh] p-space flex justify-center items-center">
-                    <div className="w-full h-full flex space-x-8 animate-sliding">
+                <div className="relative h-[40vh] overflow- whitespace-nowrap">
+                    <div className="absolute z-30 w-full h-full flex animate-sliding space-x-8">
                         {imageCarousel.map((item) => (
                             <img className="rounded-[35px] border-2 border-primary/60 p-2" src={item.image}></img>
                         ))}
-
+                    </div>
+                    <div className=" z-10 w-full h-full flex space-x-8 animate-delay">
                         {imageCarousel.map((item) => (
                             <img className="rounded-[35px] border-2 border-primary/60 p-2" src={item.image}></img>
                         ))}
                     </div>
                 </div>
+
                 <div className=" px-4 md:w-full flex text-left flex-col lg:w-2/3 mt-space">
 
                     <div className="text-2xl text-text-light font-bold">Goal</div>
