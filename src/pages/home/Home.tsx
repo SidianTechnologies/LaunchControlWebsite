@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Landing from "./components/Landing";
 import AboutUs from "./components/AboutUs";
 import NewsLetterEntry from "../../components/NewsLetterEntry";
+import Timeline from "./components/Timeline";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home(){
@@ -26,6 +27,7 @@ export default function Home(){
       <Landing/>
       <AboutUs/>
       <NewsLetterEntry/>
+      <Timeline/>
     </div>
   )
 }

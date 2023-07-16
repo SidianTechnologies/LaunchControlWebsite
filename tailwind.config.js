@@ -14,7 +14,7 @@ export default {
           DEFAULT: "#110a03",
         },
         primary: {
-          light: colors.orange[200],
+          light: colors.orange[300],
           DEFAULT: "#ff8000",
           dark: "#321a01",
         },
