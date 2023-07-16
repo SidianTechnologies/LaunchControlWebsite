@@ -4,7 +4,7 @@ export default function Timeline(){
   return(
     <div className="w-full pr-16 px-4 md:px-break mt-break">
       <div className="text-6xl text-text-light font-bold">Here's the plan.</div>
-      <ol className="relative border-l border-primary my-break flex flex-col space-y-break">
+      <ol className="relative border-l border-primary mt-12 flex flex-col space-y-break">
         <li className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8 h-fit">
           <div className="w-full">
             <div className="relative w-full flex items-center">
