@@ -1,12 +1,12 @@
+import {useNavigate} from "react-router-dom"
 export default function NewsLetterEntry(){
+
+    const navigate = useNavigate();
   return(
     <div>
-      <div className="">
-        <img src="./EngineHorizontal.jpg" className="w-96"/>
-        <img src="./EngineHorizontal2.jpg"/>
-        <img src="./EngineHorizontal3.jpg"/>
-        <img src="./EngineVertical.jpg"/>
-      </div>
+        <div className="flex justify-center w-full mt-space">
+            <button className="flex button-primary justify-center w-fit" onClick={() => navigate("/newsletter")}>Previous Newsletters</button>
+        </div>
     </div>
   )
 }
