@@ -3,7 +3,7 @@ import { animationDuration, offsetDistance } from "../Home";
 
 export default function AboutUs(){
   return(
-    <motion.div 
+    <div 
     className="h-fit w-full text-center flex flex-col items-center my-break">
       <motion.div 
       initial={{opacity: 0, y: offsetDistance}}
@@ -19,6 +19,6 @@ export default function AboutUs(){
       transition={{duration: animationDuration, ease: "backInOut"}}
       viewport={{once: true}}
       className="text-xl w-full md:w-2/3 px-4 mt-space">{String("Launch control is a decent car club in Lafayette high school. ").repeat(5)}</motion.div>
-    </motion.div>
+    </div>
   )
 }
