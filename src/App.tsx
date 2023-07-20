@@ -1,5 +1,6 @@
+import Footer from "./components/Footer"
 import Home from "./pages/home/Home"
-import ImageUploads from "./pages/imageUploads/imageUploads";
+import ImageUploads from "./pages/imageUploads/imageUploads"
 import Newsletter from "./pages/newsletter/Newsletter"
 import { Route, BrowserRouter, Routes } from 'react-router-dom'
 

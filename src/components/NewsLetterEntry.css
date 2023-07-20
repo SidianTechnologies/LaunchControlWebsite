@@ -1,0 +1,12 @@
+.slide {
+  animation: slideshow 8s linear infinite;
+}
+
+@keyframes slideshow{
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

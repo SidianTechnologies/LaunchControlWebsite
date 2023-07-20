@@ -1,7 +1,7 @@
 export default function Sponsors(){
   return(
     <div className="h-fit w-full text-center flex flex-col items-center my-break px-break">
-      <div className="text-6xl text-text-light font-bold mb-8">Sponsors</div>
+      <div className="text-6xl text-text-light font-bold">Sponsors</div>
       <div className="flex flex-wrap w-full justify-center">
         <Sponsor name="Sidian Technologies" logo="./SidianLogo.png"/>
       </div>

@@ -82,7 +82,7 @@ function NodeComponent(props: {node: TimelineNode, stage: number}){
           transition={{duration: animationDuration, ease: "backInOut"}}
           viewport={{once: true}}
 
-          className="text-2xl text-text-light font-bold flex"><div>{title}</div> <div hidden={!current} className="text-sm py-1 px-2 border-2 rounded-lg ml-4 border-primary/60 text-primary">Current</div></motion.h1>
+          className="text-2xl text-text-light font-bold flex"><div>{title}</div> <div hidden={!current} className="text-sm py-1 px-2 border-2 rounded-lg ml-4 border-primary/60 bg-primary/10 text-primary">Current</div></motion.h1>
           <motion.div 
           initial={{opacity: 0, y: offsetDistance}}
           whileInView={{opacity: 1, y: 0}}
@@ -99,7 +99,7 @@ function NodeComponent(props: {node: TimelineNode, stage: number}){
         transition={{duration: animationDuration, ease: "backInOut"}}
         viewport={{once: true}}
 
-        src={img} className="h-full object-cover rounded-[35px] border-2 p-2 border-primary/60"/>
+        src={img} className="h-full object-cover rounded-3xl border-2 p-2 border-primary/60 bg-primary/10"/>
       </div>
     </li>
   )
