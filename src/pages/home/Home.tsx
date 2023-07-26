@@ -14,7 +14,13 @@ export default function Home(){
       <Landing/>
       <AboutUs/>
       <Timeline/>
-      <NewsLetterEntry/>
+      <NewsLetterEntry data={{
+        date: Date.now(),
+        objective: "Weld the frame together.",
+        accomplished: "We have a mock-up of the chassis and have welded a beam for the bumper.",
+        nextSteps: "Weld the rest of the chassis and start mocking up engine placement and axle placement.",
+        images: ["EngineHorizontal.jpg"],
+      }}/>
       <Contact/>
       <Sponsors/>
     </div>
