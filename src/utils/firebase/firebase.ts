@@ -1,6 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-import { getStorage, ref } from "firebase/storage";
+import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
   apiKey: "AIzaSyC6u-1bt3v1MyLGzoNKFn-7YNO1A5xlx1g",
@@ -13,5 +12,5 @@ const firebaseConfig = {
   sotrageBucket: "gs://launchcontrollhs.appspot.com"
 };
 
-const app = initializeApp(firebaseConfig);
+export const app = initializeApp(firebaseConfig);
 export const storage = getStorage(app);
