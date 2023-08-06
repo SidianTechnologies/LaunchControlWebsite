@@ -1,4 +1,3 @@
-import Footer from "./components/Footer"
 import Home from "./pages/home/Home"
 import ImageUploads from "./pages/adminPanel/ImageUploads"
 import Newsletter from "./pages/newsletter/Newsletter"
@@ -10,7 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/newsletter" element={<Newsletter/>}/>
-        <Route path="/adminPanel" element={<ImageUploads/>}/>
+        <Route path="/admin-panel" element={<ImageUploads/>}/>
       </Routes>
     </BrowserRouter>
     );
