@@ -11,21 +11,21 @@ type TimelineNode = {
 
 const nodes: TimelineNode[] = [
   {
-    time: "Late June",
+    time: "Late May",
     title: "Team Founding",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque felis lacus, interdum et bibendum ac, elementum eget turpis. Maecenas ultrices felis at mauris facilisis viverra. Nullam sit amet nisl nec mauris ultricies facilisis vitae quis nulla. Nunc eu ligula imperdiet, tincidunt mauris ac, tincidunt eros.",
+    text: "Adit Swami, founder of the launch control car club, first thought of the idea when he saw that there were no clubs that were related to cars or mechanical engineering clubs related to cars. In response, he decided to launch a club dedicated to fabricating and modifying cars to race and show off. The minimum requirement for people in the club was 5 people, but we demolished that number by getting 11 people our first day after launch, and still keep getting requests for joining.",
     img: "./EngineHorizontal.jpg",
   },
   {
-    time: "Early July",
+    time: "Early June",
     title: "Parent Meeting",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque felis lacus, interdum et bibendum ac, elementum eget turpis. Maecenas ultrices felis at mauris facilisis viverra. Nullam sit amet nisl nec mauris ultricies facilisis vitae quis nulla. Nunc eu ligula imperdiet, tincidunt mauris ac, tincidunt eros.",
+    text: "Shortly after the launch of the club, the members decided to get the parents involved to help launch control car club out and get up to speed with all the decisions and plans for the year. In this meeting, they gave they brilliant idea of starting with a go kart in order to get used to welding and fabricating, as well as working with engines. Not only is this a good platform to start out on, this gives us a way for us to prove to sponsors that we are dedicated to this club and will do anything to succeed.  In addition, we can keep increasing the horsepower and engine size as we keep improving the go kart, which eventually might lead to us creating a frame of car with a v8.",
     img: "./EngineHorizontal2.jpg",
   },
   {
-    time: "Early July",
+    time: "Late July",
     title: "Buying parts",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque felis lacus, interdum et bibendum ac, elementum eget turpis. Maecenas ultrices felis at mauris facilisis viverra. Nullam sit amet nisl nec mauris ultricies facilisis vitae quis nulla. Nunc eu ligula imperdiet, tincidunt mauris ac, tincidunt eros.",
+    text: "After convincing the parents for some initial funding, we were able to gather a list of parts to buy including engine, steel rods, axle, etc.  slowly but surely, we ordered the parts or went to our local home depot to buy the necessary tools and materials in order to build the go kart",
     img: "./Rohan.jpg",
     current: true,
   },
@@ -52,7 +52,7 @@ export default function Timeline(){
       className="text-2xl text-text">And the progress.</motion.div>
       <ol className="relative border-l border-primary mt-12 flex flex-col space-y-break">
         {nodes.map((node, index) => (
-          <NodeComponent node={node} stage={index + 1}/>
+          <NodeComponent key={index} node={node} stage={index + 1}/>
         ))}
       </ol>
     </div>
