@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { animationDuration, offsetDistance } from '../pages/home/Home';
 import { Bullseye, Check2Circle, HourglassSplit } from 'react-bootstrap-icons';
 
-export default function NewsLetterEntry(props: {data: NewsLetterEntryData}){
+export default function NewsLetterEntry(props: {data: NewsLetterEntryData, slideRight?: boolean}){
   const {
     date,
     images,
@@ -39,7 +39,7 @@ export default function NewsLetterEntry(props: {data: NewsLetterEntryData}){
       className='w-full flex justify-center my-8'
       >
         {[0, 1, 2].map((key) => (
-          <div key={key} className="flex w-max slide">
+          <div key={key} className={`flex w-max ${props.slideRight? "slide" : "slide-right"}`}>
             {images.map(img => (
               <img src={img} key={img} className='h-96 m-4 rounded-3xl border-2 p-2 border-primary/60 bg-primary/10'/>
             ))}

@@ -9,15 +9,6 @@ export default {
   ],
   theme: {
     extend: {
-      keyframes: {
-        slide: {
-          '0%': {transform: `translate(0%)`},
-          '100%': {transform: `translate(-100%)`},
-        },
-      },
-      animation: {
-        sliding: 'slide 10s linear infinite',
-      },
       colors: {
         background: {
           DEFAULT: "#110a03",
@@ -37,16 +28,6 @@ export default {
         break: '80px',
         space: '16px',
       },
-      keyframes: {
-        disappear: {
-          '0%': {transform: `translate(0)`},
-          '100%': {transform: `translate(-100%)`},
-        },
-      },
-      animation: {
-        sliding: 'disappear 10s linear infinite',
-        delay: 'disappear 10s linear infinite 10s',
-      }
     },
   },
   plugins: [
