@@ -4,6 +4,7 @@ import NewsLetterEntry from "../../components/NewsLetterEntry";
 import Timeline from "./components/Timeline";
 import Sponsors from "./components/Sponsors";
 import Contact from "./components/Contact";
+import Footer from "../../components/Footer";
 
 const animationDuration = 1;
 const offsetDistance = 100;
@@ -23,6 +24,7 @@ export default function Home(){
       }}/>
       <Contact/>
       <Sponsors/>
+      <Footer/>
     </div>
   )
 }
