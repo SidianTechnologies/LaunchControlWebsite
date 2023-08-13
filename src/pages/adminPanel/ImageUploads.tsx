@@ -62,7 +62,7 @@ export default function ImageUploads(){
     }
 
     return(
-        <div className="relative w-full h-screen">
+        <div className="relative w-full h-full p-4">
             <h1 className="flex justify-center text-6xl text-text-light font-bold">Admin Controls</h1>
 
             <h2 className="flex justify-center text-lg text-text mb-8">(WARNING: Works best with 3 to 5 pictures)</h2>
@@ -74,36 +74,32 @@ export default function ImageUploads(){
                 <input className="text-box outline-none" type="text" placeholder="Next Steps" onChange={e => {setNextSteps(e.target.value);}}/>
             </div>
 
-            <div className="flex fixed z-30 right-20 w-1/2 h-fit mt-4">
-                <input className="absolute file:border-primary-dark file:bg-primary file:text-primary-dark file:font-bold file:py-2 file:px-4 file:rounded" type="file" multiple onChange={(handleChange)}/>
+            <div className="flex h-fit w-full mt-4 space-x-4 justify-evenly">
+                <input className="absolute w-48 file:w-48 file:border-primary-dark file:bg-primary file:text-primary-dark file:font-bold file:py-2 file:px-4 file:rounded" type="file" multiple onChange={(handleChange)}/>
+
+                <button disabled={disablePress} className="button-primary disabled:bg-white" onClick={(() => {disableMultiUpload();
+                    uploadImage().then((imageURLs) => {
+                        meetingChanges({
+                            date: date,
+                            images: imageURLs?? [],
+                            accomplished: accomplished,
+                            nextSteps: nextSteps,
+                            objective: objective,
+                        }); 
+                        setDisablePress(false)
+                    })
+
+                })}>Upload</button>
+
+                <button className=" button-primary" onClick={deleteEntry}>Delete</button>
             </div>
 
-    <div className="fixed z-20 flex lg:justify-between px-40 w-full pt-4 items-center">
-
-        <button disabled={disablePress} className="z-30 button-primary disabled:bg-white" onClick={(() => {disableMultiUpload();
-            uploadImage().then((imageURLs) => {
-                meetingChanges({
-                    date: date,
-                    images: imageURLs?? [],
-                    accomplished: accomplished,
-                    nextSteps: nextSteps,
-                    objective: objective,
-                }); 
-                setDisablePress(false)
-            })
-
-        })}>Upload</button>
-
-        <button className="z-30 button-primary" onClick={deleteEntry}>Delete</button>
-
-    </div>
-
-            <div className={`fixed z-10 w-full flex flex-col justify-center h-1/3 items-center mt-16 ${disablePress == false? "invisible" : "visible"}`}>
+            <div className={`absolute w-full flex flex-col justify-center h-1/3 items-center mt-8 ${disablePress == false? "invisible" : "visible"}`}>
                 <div className="text-text-light/75 text-4xl font-bold p-2">Loading Entry</div>
                 <div className="text-9xl text-primary/70 animate-spin"><ArrowClockwise/></div>
             </div>
 
-            <div className="flex mt-16">
+            <div className="flex overflow-auto mt-8">
                 {ImageList?.map((url, index) => {
                     return <img key={index} className="w-max h-96 m-4 rounded-3xl border-2 p-2 border-primary/60 bg-primary/10" src={url}/>;
                 })}
