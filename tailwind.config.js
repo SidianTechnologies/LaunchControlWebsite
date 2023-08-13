@@ -62,7 +62,7 @@ export default {
           "@apply px-4 py-2 border-2 border-text-light rounded bg-transparent text-text-light font-bold": {}
         },
         ".text-box": {
-          "@apply border-primary/60 border-2 rounded-lg w-2/3 p-2 bg-primary-dark/50 text-text-light/90 placeholder:text-primary-light/50 placeholder:font-normal font-semibold": {}
+          "@apply border-primary/60 border-2 rounded-lg w-1/2 p-4 bg-primary-dark/50 text-text-light/90 placeholder:text-primary-light/50 placeholder:font-normal font-semibold": {}
         }
       });
     },
